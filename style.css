@@ -1,8 +1,126 @@
-@font-face {
-  font-family: Inter;
-  src: url("assets/Inter.woff2") format("woff2");
-  font-weight: 100 900;
-  font-display: swap;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Étape CSS : écris ici les règles de la carte et de ses éléments. */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #F6F5F0;
+  color: #111111;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 540px;
+  background-color: #FFFFFF;
+  border: 2.5px solid #111111;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 7px 0 #111111;
+}
+
+.card-header {
+  background-color: #6CE5D8;
+  padding: 32px 36px;
+  border-bottom: 2.5px solid #111111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card-header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.icon-badge {
+  width: 60px;
+  height: 60px;
+  background-color: #F7E859;
+  border: 2.5px solid #111111;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.card-body {
+  background-color: #FFFFFF;
+  padding: 32px 36px 36px;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.label-title {
+  font-weight: 700;
+}
+
+.label-info {
+  color: #666666;
+}
+
+.password-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 2px solid #111111;
+  border-radius: 10px;
+  padding: 10px 10px 10px 18px;
+  margin-bottom: 22px;
+}
+
+.password-placeholder {
+  color: #555555;
+  font-size: 15px;
+}
+
+.btn-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #FFFFFF;
+  border: 1.5px solid #111111;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: #111111;
+  cursor: pointer;
+}
+
+.btn-generate {
+  width: 100%;
+  background-color: #000000;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  padding: 18px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
